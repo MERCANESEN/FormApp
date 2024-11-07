@@ -10,6 +10,7 @@ namespace FormsApp.Models{
         public int ProductId { get; set; }
 
         [Display(Name ="Urun Adi")]
+        [Required]
 
         public String Name { get; set; } = string.Empty;
 
@@ -22,7 +23,7 @@ namespace FormsApp.Models{
         public String Image { get; set; } = string.Empty;
 
         public bool IsActive { get; set; }
-
+        [Display(Name ="Category")]
         public int CategoryId { get; set; }
     }
 
